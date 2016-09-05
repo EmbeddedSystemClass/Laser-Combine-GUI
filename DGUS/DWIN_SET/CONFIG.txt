@@ -4,5 +4,4 @@ R3=AA      ;
 RA=CC      ;
 RC=00      ;
 STOP_DWIN_OS;
-TP_CORRECT;
 
