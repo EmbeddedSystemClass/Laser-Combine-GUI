@@ -1,0 +1,8 @@
+R1=07      ;Band Rate,07=115200
+R2=04      ;Sys_CFG
+R3=AA      ;
+RA=CC      ;
+RC=00      ;
+STOP_DWIN_OS;
+TP_CORRECT;
+

@@ -1,0 +1,13 @@
+[INIT]
+VARCount=64
+PICFIX=1
+SCREENDSIZE=800X600
+SPADDRESS=5000
+[IMG]
+0=0 Logo.bmp
+1=1 Main menu.bmp
+2=2 Main menu (pressed).bmp
+3=3 Password.bmp
+4=4 Password (pressed).bmp
+5=5 SolidStateLaserService.bmp
+6=6 SolidStateLaserService (pressed).bmp
