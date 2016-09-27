@@ -51,3 +51,4 @@ SPADDRESS=5000
 44=44 SSWork_FlowError.bmp
 45=45 SSWork_Overheating.bmp
 46=46 SSWork_Fault.bmp
+47=47 WrongEmmiter.bmp
