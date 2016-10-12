@@ -52,3 +52,5 @@ SPADDRESS=5000
 45=45 SSWork_Overheating.bmp
 46=46 SSWork_Fault.bmp
 47=47 WrongEmmiter.bmp
+48=48 Keyboard.bmp
+49=49 Keyboard (pressed).bmp
