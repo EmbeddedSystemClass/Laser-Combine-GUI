@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{95af5bfe-3fa1-43ee-9bdc-6db6411e6d0d}</ProjectGuid>
+    <Keyword>DirectXApp</Keyword>
+    <RootNamespace>PyramidView</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ImageContentTask.props" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\MeshContentTask.props" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ShaderGraphContentTask.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <PackageCertificateKeyFile>PyramidView_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>0CE1DF2E89447E0554C3091B50C4BD4F7EA85744</PackageCertificateThumbprint>
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store; $(VCInstallDir)\lib</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store; $(VCInstallDir)\lib</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\amd64; $(VCInstallDir)\lib\amd64</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\amd64; $(VCInstallDir)\lib\amd64</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png" />
+    <Image Include="Assets\SplashScreen.scale-200.png" />
+    <Image Include="Assets\Square150x150Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Image Include="Media\clouds_tx_0_0.dds" />
+    <Image Include="Media\clouds_tx_0_1.dds" />
+    <Image Include="Media\clouds_tx_0_2.dds" />
+    <Image Include="Media\clouds_tx_0_3.dds" />
+    <Image Include="Media\clouds_tx_1_0.dds" />
+    <Image Include="Media\clouds_tx_1_1.dds" />
+    <Image Include="Media\clouds_tx_1_2.dds" />
+    <Image Include="Media\clouds_tx_1_3.dds" />
+    <Image Include="Media\clouds_tx_2_0.dds" />
+    <Image Include="Media\clouds_tx_2_1.dds" />
+    <Image Include="Media\clouds_tx_2_2.dds" />
+    <Image Include="Media\clouds_tx_2_3.dds" />
+    <Image Include="Media\clouds_tx_3_0.dds" />
+    <Image Include="Media\clouds_tx_3_1.dds" />
+    <Image Include="Media\clouds_tx_3_2.dds" />
+    <Image Include="Media\clouds_tx_3_3.dds" />
+    <Image Include="Media\clouds_tx_4_0.dds" />
+    <Image Include="Media\clouds_tx_4_1.dds" />
+    <Image Include="Media\clouds_tx_4_2.dds" />
+    <Image Include="Media\clouds_tx_4_3.dds" />
+    <Image Include="Media\clouds_tx_5_0.dds" />
+    <Image Include="Media\clouds_tx_5_1.dds" />
+    <Image Include="Media\clouds_tx_5_2.dds" />
+    <Image Include="Media\clouds_tx_5_3.dds" />
+    <Image Include="Media\clouds_tx_6_0.dds" />
+    <Image Include="Media\clouds_tx_6_1.dds" />
+    <Image Include="Media\clouds_tx_6_2.dds" />
+    <Image Include="Media\clouds_tx_6_3.dds" />
+    <Image Include="Media\clouds_tx_7_0.dds" />
+    <Image Include="Media\clouds_tx_7_1.dds" />
+    <Image Include="Media\clouds_tx_7_2.dds" />
+    <Image Include="Media\clouds_tx_7_3.dds" />
+    <Image Include="Media\diffuse_tx_0_0.dds" />
+    <Image Include="Media\diffuse_tx_0_1.dds" />
+    <Image Include="Media\diffuse_tx_0_2.dds" />
+    <Image Include="Media\diffuse_tx_0_3.dds" />
+    <Image Include="Media\diffuse_tx_1_0.dds" />
+    <Image Include="Media\diffuse_tx_1_1.dds" />
+    <Image Include="Media\diffuse_tx_1_2.dds" />
+    <Image Include="Media\diffuse_tx_1_3.dds" />
+    <Image Include="Media\diffuse_tx_2_0.dds" />
+    <Image Include="Media\diffuse_tx_2_1.dds" />
+    <Image Include="Media\diffuse_tx_2_2.dds" />
+    <Image Include="Media\diffuse_tx_2_3.dds" />
+    <Image Include="Media\diffuse_tx_3_0.dds" />
+    <Image Include="Media\diffuse_tx_3_1.dds" />
+    <Image Include="Media\diffuse_tx_3_2.dds" />
+    <Image Include="Media\diffuse_tx_3_3.dds" />
+    <Image Include="Media\diffuse_tx_4_0.dds" />
+    <Image Include="Media\diffuse_tx_4_1.dds" />
+    <Image Include="Media\diffuse_tx_4_2.dds" />
+    <Image Include="Media\diffuse_tx_4_3.dds" />
+    <Image Include="Media\diffuse_tx_5_0.dds" />
+    <Image Include="Media\diffuse_tx_5_1.dds" />
+    <Image Include="Media\diffuse_tx_5_2.dds" />
+    <Image Include="Media\diffuse_tx_5_3.dds" />
+    <Image Include="Media\diffuse_tx_6_0.dds" />
+    <Image Include="Media\diffuse_tx_6_1.dds" />
+    <Image Include="Media\diffuse_tx_6_2.dds" />
+    <Image Include="Media\diffuse_tx_6_3.dds" />
+    <Image Include="Media\diffuse_tx_7_0.dds" />
+    <Image Include="Media\diffuse_tx_7_1.dds" />
+    <Image Include="Media\diffuse_tx_7_2.dds" />
+    <Image Include="Media\diffuse_tx_7_3.dds" />
+    <Image Include="Media\nightlight_tx_0_0.dds" />
+    <Image Include="Media\nightlight_tx_0_1.dds" />
+    <Image Include="Media\nightlight_tx_0_2.dds" />
+    <Image Include="Media\nightlight_tx_0_3.dds" />
+    <Image Include="Media\nightlight_tx_1_0.dds" />
+    <Image Include="Media\nightlight_tx_1_1.dds" />
+    <Image Include="Media\nightlight_tx_1_2.dds" />
+    <Image Include="Media\nightlight_tx_1_3.dds" />
+    <Image Include="Media\nightlight_tx_2_0.dds" />
+    <Image Include="Media\nightlight_tx_2_1.dds" />
+    <Image Include="Media\nightlight_tx_2_2.dds" />
+    <Image Include="Media\nightlight_tx_2_3.dds" />
+    <Image Include="Media\nightlight_tx_3_0.dds" />
+    <Image Include="Media\nightlight_tx_3_1.dds" />
+    <Image Include="Media\nightlight_tx_3_2.dds" />
+    <Image Include="Media\nightlight_tx_3_3.dds" />
+    <Image Include="Media\nightlight_tx_4_0.dds" />
+    <Image Include="Media\nightlight_tx_4_1.dds" />
+    <Image Include="Media\nightlight_tx_4_2.dds" />
+    <Image Include="Media\nightlight_tx_4_3.dds" />
+    <Image Include="Media\nightlight_tx_5_0.dds" />
+    <Image Include="Media\nightlight_tx_5_1.dds" />
+    <Image Include="Media\nightlight_tx_5_2.dds" />
+    <Image Include="Media\nightlight_tx_5_3.dds" />
+    <Image Include="Media\nightlight_tx_6_0.dds" />
+    <Image Include="Media\nightlight_tx_6_1.dds" />
+    <Image Include="Media\nightlight_tx_6_2.dds" />
+    <Image Include="Media\nightlight_tx_6_3.dds" />
+    <Image Include="Media\nightlight_tx_7_0.dds" />
+    <Image Include="Media\nightlight_tx_7_1.dds" />
+    <Image Include="Media\nightlight_tx_7_2.dds" />
+    <Image Include="Media\nightlight_tx_7_3.dds" />
+    <Image Include="Media\normal_tx_0_0.dds" />
+    <Image Include="Media\normal_tx_0_1.dds" />
+    <Image Include="Media\normal_tx_0_2.dds" />
+    <Image Include="Media\normal_tx_0_3.dds" />
+    <Image Include="Media\normal_tx_1_0.dds" />
+    <Image Include="Media\normal_tx_1_1.dds" />
+    <Image Include="Media\normal_tx_1_2.dds" />
+    <Image Include="Media\normal_tx_1_3.dds" />
+    <Image Include="Media\normal_tx_2_0.dds" />
+    <Image Include="Media\normal_tx_2_1.dds" />
+    <Image Include="Media\normal_tx_2_2.dds" />
+    <Image Include="Media\normal_tx_2_3.dds" />
+    <Image Include="Media\normal_tx_3_0.dds" />
+    <Image Include="Media\normal_tx_3_1.dds" />
+    <Image Include="Media\normal_tx_3_2.dds" />
+    <Image Include="Media\normal_tx_3_3.dds" />
+    <Image Include="Media\normal_tx_4_0.dds" />
+    <Image Include="Media\normal_tx_4_1.dds" />
+    <Image Include="Media\normal_tx_4_2.dds" />
+    <Image Include="Media\normal_tx_4_3.dds" />
+    <Image Include="Media\normal_tx_5_0.dds" />
+    <Image Include="Media\normal_tx_5_1.dds" />
+    <Image Include="Media\normal_tx_5_2.dds" />
+    <Image Include="Media\normal_tx_5_3.dds" />
+    <Image Include="Media\normal_tx_6_0.dds" />
+    <Image Include="Media\normal_tx_6_1.dds" />
+    <Image Include="Media\normal_tx_6_2.dds" />
+    <Image Include="Media\normal_tx_6_3.dds" />
+    <Image Include="Media\normal_tx_7_0.dds" />
+    <Image Include="Media\normal_tx_7_1.dds" />
+    <Image Include="Media\normal_tx_7_2.dds" />
+    <Image Include="Media\normal_tx_7_3.dds" />
+    <Image Include="Media\skymap_.dds" />
+    <Image Include="Media\spec_tx_0_0.dds" />
+    <Image Include="Media\spec_tx_0_1.dds" />
+    <Image Include="Media\spec_tx_0_2.dds" />
+    <Image Include="Media\spec_tx_0_3.dds" />
+    <Image Include="Media\spec_tx_1_0.dds" />
+    <Image Include="Media\spec_tx_1_1.dds" />
+    <Image Include="Media\spec_tx_1_2.dds" />
+    <Image Include="Media\spec_tx_1_3.dds" />
+    <Image Include="Media\spec_tx_2_0.dds" />
+    <Image Include="Media\spec_tx_2_1.dds" />
+    <Image Include="Media\spec_tx_2_2.dds" />
+    <Image Include="Media\spec_tx_2_3.dds" />
+    <Image Include="Media\spec_tx_3_0.dds" />
+    <Image Include="Media\spec_tx_3_1.dds" />
+    <Image Include="Media\spec_tx_3_2.dds" />
+    <Image Include="Media\spec_tx_3_3.dds" />
+    <Image Include="Media\spec_tx_4_0.dds" />
+    <Image Include="Media\spec_tx_4_1.dds" />
+    <Image Include="Media\spec_tx_4_2.dds" />
+    <Image Include="Media\spec_tx_4_3.dds" />
+    <Image Include="Media\spec_tx_5_0.dds" />
+    <Image Include="Media\spec_tx_5_1.dds" />
+    <Image Include="Media\spec_tx_5_2.dds" />
+    <Image Include="Media\spec_tx_5_3.dds" />
+    <Image Include="Media\spec_tx_6_0.dds" />
+    <Image Include="Media\spec_tx_6_1.dds" />
+    <Image Include="Media\spec_tx_6_2.dds" />
+    <Image Include="Media\spec_tx_6_3.dds" />
+    <Image Include="Media\spec_tx_7_0.dds" />
+    <Image Include="Media\spec_tx_7_1.dds" />
+    <Image Include="Media\spec_tx_7_2.dds" />
+    <Image Include="Media\spec_tx_7_3.dds" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="BasicLoader.h" />
+    <ClInclude Include="BasicReaderWriter.h" />
+    <ClInclude Include="Common\DeviceResources.h" />
+    <ClInclude Include="DDSTextureLoader.h" />
+    <ClInclude Include="PyramidViewMain.h" />
+    <ClInclude Include="Common\DirectXHelper.h" />
+    <ClInclude Include="Common\StepTimer.h" />
+    <ClInclude Include="Content\Sample3DSceneRenderer.h" />
+    <ClInclude Include="Content\SampleFpsTextRenderer.h" />
+    <ClInclude Include="Content\ShaderStructures.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="BasicLoader.cpp" />
+    <ClCompile Include="BasicReaderWriter.cpp" />
+    <ClCompile Include="Common\DeviceResources.cpp" />
+    <ClCompile Include="DDSTextureLoader.cpp" />
+    <ClCompile Include="PyramidViewMain.cpp" />
+    <ClCompile Include="Content\SampleFpsTextRenderer.cpp" />
+    <ClCompile Include="Content\Sample3DSceneRenderer.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Content\Fog.hlsli" />
+    <None Include="PyramidView_StoreKey.pfx" />
+    <None Include="PyramidView_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Content\EarthPixelShader.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Content\EarthVertexShader.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Content\SamplePixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Content\SampleVertexShader.hlsl">
+      <ShaderType>Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Content\StarPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Content\StarVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package.StoreAssociation.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PyramidView.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ImageContentTask.targets" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\MeshContentTask.targets" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ShaderGraphContentTask.targets" />
+  </ImportGroup>
+</Project>
