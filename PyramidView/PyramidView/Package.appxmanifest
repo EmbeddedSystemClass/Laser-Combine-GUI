@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="62965MurkaCo.SampleEarthShaded" Publisher="CN=86001CAD-BA09-452F-AB74-3CFF28B83C6D" Version="1.1.8.0" />
+  <Identity Name="62965MurkaCo.SampleEarthShaded" Publisher="CN=86001CAD-BA09-452F-AB74-3CFF28B83C6D" Version="1.1.13.0" />
   <mp:PhoneIdentity PhoneProductId="d6f7cfd0-03c4-4e5f-a993-10650a3653d7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Sample Earth Shaded</DisplayName>

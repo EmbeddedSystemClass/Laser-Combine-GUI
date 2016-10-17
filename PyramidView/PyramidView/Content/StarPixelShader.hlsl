@@ -55,7 +55,7 @@ float4 main(PixelShaderInput input) : SV_TARGET
 	//float FogTransmittance = HFog(input.position.y, eyePos.y, length(input.view), fog_r0, fog_mu, fog_ro);
 	float FogTransmittance = SFog(input.position, Earth.xyz, eye.xyz, fog_r0, fog_mu, fog_ro);
 
-	float3 final_color = float3(1.0f, 1.0f, 1.0f) * (1.0f - FogTransmittance) + color * FogTransmittance;
+	float3 final_color = lerp(float3(1.0f, 1.0f, 1.0f), color, FogTransmittance);
 
 	return float4(final_color, 1.0f);
 }

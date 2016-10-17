@@ -83,7 +83,7 @@ void Sample3DSceneRenderer::CreateWindowSizeDependentResources()
 {
 	Size outputSize = m_deviceResources->GetOutputSize();
 	float aspectRatio = outputSize.Width / outputSize.Height;
-	float fovAngleY = 45.0f * XM_PI / 180.0f;
+	float fovAngleY = 30.0f * XM_PI / 180.0f;
 
 	// This is a simple example of change that can be made when the app is in
 	// portrait or snapped view.
@@ -227,7 +227,7 @@ void Sample3DSceneRenderer::Rotate(float radians)
 	}
 
 	XMVECTOR light = XMLoadFloat3(&m_constantBufferLightData.lightSources[0]);
-	XMVECTOR pos = XMVector3TransformCoord(light, XMMatrixRotationY(radians * -0.5f));
+	XMVECTOR pos = XMVector3TransformCoord(light, XMMatrixRotationY(radians * -2.0f));
 	XMStoreFloat3(&m_constantBufferLightData.lightSources[0], pos);
 }
 

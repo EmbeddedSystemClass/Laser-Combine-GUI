@@ -88,9 +88,9 @@ float4 main(PixelShaderInput input) : SV_TARGET
 
 	float3 color =
 		ambient * (diffuse_tex.xyz + clouds_tex.xyz) +
-		(1.0f - diffuse) * night_tex.xyz +
+		(1.0f - diffuse) * night_tex.xyz * 2.0f +
 		diffuse * (diffuse_tex.xyz * (1.0f - clouds_tex.w)) +
-		specular_tex.x * diffuse * 1.0f * exp(log(specular) * 50.0f);
+		specular_tex.x * diffuse * 10.0f * exp(log(specular) * 100.0f);
 
 	float4 eye = float4(eyePos.xyz, 1.0f);
 	//eye = mul(eye, model);
