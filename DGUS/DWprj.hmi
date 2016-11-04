@@ -67,3 +67,4 @@ SPADDRESS=5000
 60=60 LPWork_FlowError.bmp
 61=61 LPWork_Overheating.bmp
 62=62 LPWork_Fault.bmp
+63=63 CoolingBaseSettings.bmp
