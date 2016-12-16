@@ -1,0 +1,9 @@
+R1=00      ;Band Rate,00=1200
+R2=04      ;Sys_CFG
+R3=AA      ;
+R5=14      ;
+R9=58      ;
+RA=CC      ;
+RC=00      ;
+STOP_DWIN_OS;
+

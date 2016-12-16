@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>95af5bfe-3fa1-43ee-9bdc-6db6411e6d0d</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>564102eb-a1db-49a5-88a0-5390a7e84e06</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>ae6851e8-d093-47e7-8c19-39ea7b88d331</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="Common\DirectXHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DeviceResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClCompile Include="Common\DeviceResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClInclude Include="Content\Sample3DSceneRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\SampleFpsTextRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\ShaderStructures.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClCompile Include="Content\Sample3DSceneRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\SampleFpsTextRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Filter Include="DXbasic">
+      <UniqueIdentifier>{4993b3eb-1b79-48ec-8af5-272d1dec7d64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Shaders">
+      <UniqueIdentifier>{3a558a25-f1be-473c-8898-96aa5c701c7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Media">
+      <UniqueIdentifier>{ff34a487-20fa-4ac4-aad1-eb1707440896}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="PyramidViewMain.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="BasicLoader.cpp">
+      <Filter>DXbasic</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicReaderWriter.cpp">
+      <Filter>DXbasic</Filter>
+    </ClCompile>
+    <ClCompile Include="DDSTextureLoader.cpp">
+      <Filter>DXbasic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="PyramidViewMain.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="BasicLoader.h">
+      <Filter>DXbasic</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicReaderWriter.h">
+      <Filter>DXbasic</Filter>
+    </ClInclude>
+    <ClInclude Include="DDSTextureLoader.h">
+      <Filter>DXbasic</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_0_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_0_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_0_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_0_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_1_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_1_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_1_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_1_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_2_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_2_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_2_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_2_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_3_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_3_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_3_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_3_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_4_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_4_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_4_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_4_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_5_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_5_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_5_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_5_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_6_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_6_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_6_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_6_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_7_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_7_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_7_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\clouds_tx_7_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_0_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_0_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_0_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_0_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_1_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_1_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_1_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_1_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_2_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_2_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_2_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_2_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_3_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_3_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_3_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_3_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_4_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_4_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_4_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_4_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_5_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_5_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_5_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_5_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_6_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_6_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_6_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_6_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_7_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_7_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_7_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\diffuse_tx_7_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_0_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_0_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_0_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_0_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_1_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_1_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_1_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_1_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_2_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_2_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_2_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_2_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_3_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_3_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_3_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_3_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_4_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_4_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_4_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_4_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_5_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_5_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_5_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_5_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_6_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_6_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_6_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_6_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_7_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_7_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_7_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\nightlight_tx_7_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_0_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_0_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_0_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_0_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_1_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_1_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_1_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_1_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_2_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_2_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_2_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_2_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_3_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_3_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_3_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_3_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_4_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_4_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_4_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_4_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_5_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_5_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_5_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_5_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_6_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_6_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_6_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_6_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_7_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_7_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_7_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\normal_tx_7_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\skymap_.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_0_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_0_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_0_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_0_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_1_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_1_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_1_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_1_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_2_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_2_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_2_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_2_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_3_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_3_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_3_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_3_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_4_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_4_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_4_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_4_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_5_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_5_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_5_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_5_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_6_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_6_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_6_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_6_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_7_0.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_7_1.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_7_2.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+    <Image Include="Media\spec_tx_7_3.dds">
+      <Filter>Content\Media</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PyramidView_TemporaryKey.pfx" />
+    <None Include="Package.StoreAssociation.xml" />
+    <None Include="PyramidView_StoreKey.pfx" />
+    <None Include="Content\Fog.hlsli">
+      <Filter>Content\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Content\EarthPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\EarthVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\SamplePixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\SampleVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\StarPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\StarVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PyramidView.rc" />
+  </ItemGroup>
+</Project>

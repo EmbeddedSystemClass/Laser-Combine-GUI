@@ -1,0 +1,1 @@
+MainPackage=C:\Users\vladi_000\documents\visual studio 2015\Projects\PyramidView\x64\Release\PyramidView\PyramidView_1.1.8.0_x64.appx
