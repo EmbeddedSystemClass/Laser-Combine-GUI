@@ -72,3 +72,6 @@ SPADDRESS=5000
 65=65 basicSettings (pressed).bmp
 66=66 Log.bmp
 67=67 Log (pressed).bmp
+68=68 Boot menu.bmp
+69=69 Boot menu (pressed).bmp
+70=70 Boot firmware update.bmp
