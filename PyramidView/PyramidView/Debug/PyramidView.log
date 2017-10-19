@@ -1,0 +1,28 @@
+﻿C:\Users\FxSlava\Documents\Laser-Combine-GUI\PyramidView\PyramidView\Content\EarthPixelShader.hlsl(69,9-62): warning X3206: implicit truncation of vector type
+  
+  compilation object save succeeded; see C:\Users\FxSlava\Documents\Laser-Combine-GUI\PyramidView\Debug\PyramidView\EarthPixelShader.cso
+  compilation object save succeeded; see C:\Users\FxSlava\Documents\Laser-Combine-GUI\PyramidView\Debug\PyramidView\EarthVertexShader.cso
+  compilation object save succeeded; see C:\Users\FxSlava\Documents\Laser-Combine-GUI\PyramidView\Debug\PyramidView\SamplePixelShader.cso
+  compilation object save succeeded; see C:\Users\FxSlava\Documents\Laser-Combine-GUI\PyramidView\Debug\PyramidView\SampleVertexShader.cso
+  compilation object save succeeded; see C:\Users\FxSlava\Documents\Laser-Combine-GUI\PyramidView\Debug\PyramidView\StarPixelShader.cso
+C:\Users\FxSlava\Documents\Laser-Combine-GUI\PyramidView\PyramidView\Content\StarVertexShader.hlsl(53,2-22): warning X3206: implicit truncation of vector type
+  
+  compilation object save succeeded; see C:\Users\FxSlava\Documents\Laser-Combine-GUI\PyramidView\Debug\PyramidView\StarVertexShader.cso
+  pch.cpp
+  App.cpp
+  BasicLoader.cpp
+  BasicReaderWriter.cpp
+  DeviceResources.cpp
+  DDSTextureLoader.cpp
+  PyramidViewMain.cpp
+  SampleFpsTextRenderer.cpp
+  Sample3DSceneRenderer.cpp
+c:\users\fxslava\documents\laser-combine-gui\pyramidview\pyramidview\basicloader.cpp(485): warning C4018: '<': signed/unsigned mismatch
+c:\users\fxslava\documents\laser-combine-gui\pyramidview\pyramidview\basicloader.cpp(486): warning C4018: '<': signed/unsigned mismatch
+c:\users\fxslava\documents\laser-combine-gui\pyramidview\pyramidview\basicloader.cpp(507): warning C4018: '<': signed/unsigned mismatch
+c:\users\fxslava\documents\laser-combine-gui\pyramidview\pyramidview\basicloader.cpp(508): warning C4018: '<': signed/unsigned mismatch
+c:\users\fxslava\documents\laser-combine-gui\pyramidview\pyramidview\basicloader.cpp(527): warning C4018: '<': signed/unsigned mismatch
+c:\users\fxslava\documents\laser-combine-gui\pyramidview\pyramidview\basicloader.cpp(528): warning C4018: '<': signed/unsigned mismatch
+  PyramidView.vcxproj -> C:\Users\FxSlava\Documents\Laser-Combine-GUI\PyramidView\Debug\PyramidView\PyramidView.exe
+  PyramidView.vcxproj -> C:\Users\FxSlava\Documents\Laser-Combine-GUI\PyramidView\Debug\PyramidView\PyramidView.pdb (Partial PDB)
+C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\AppxPackage\Microsoft.AppXPackage.Targets(1930,5): warning APPX0108: The certificate specified has expired. For more information about renewing certificates, see http://go.microsoft.com/fwlink/?LinkID=241478.
