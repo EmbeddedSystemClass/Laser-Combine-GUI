@@ -114,3 +114,5 @@ SPADDRESS=5000
 107=107 MainMenuIPL (pressed).bmp
 108=108 CANSettings.bmp
 109=109 CANSettings (pressed).bmp
+110=110 SlotCANSettings.bmp
+111=111 SlotCANSettings (pressed).bmp
